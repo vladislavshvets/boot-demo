@@ -1,13 +1,15 @@
 package boot.bootdemo.service.Impl;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import boot.bootdemo.service.CsvReaderService;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
-
+@SpringBootTest
 public class CsvReaderServiceImplTest {
     private static final String FILE_NAME = "src/main/resources/test.csv";
     private static final String EMPTY_FILE_NAME = "src/main/resources/empty.csv";

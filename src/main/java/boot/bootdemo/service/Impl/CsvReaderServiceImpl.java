@@ -2,7 +2,7 @@ package boot.bootdemo.service.Impl;
 
 import boot.bootdemo.exception.FileReadException;
 import boot.bootdemo.service.CsvReaderService;
-
+import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class CsvReaderServiceImpl implements CsvReaderService {
     @Override
     public List<String> read(String filePath) {

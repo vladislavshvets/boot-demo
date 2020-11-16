@@ -1,14 +1,13 @@
-package boot.bootdemo.service.Impl;
+package boot.bootdemo.service;
 
 import boot.bootdemo.exception.FileReadException;
-import boot.bootdemo.service.CsvReaderService;
-import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CsvReaderServiceImpl implements CsvReaderService {

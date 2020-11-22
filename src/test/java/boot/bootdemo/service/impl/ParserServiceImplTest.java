@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import boot.bootdemo.dto.ReviewDto;
 import boot.bootdemo.service.CsvReaderService;
 import boot.bootdemo.service.ParserService;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +33,8 @@ public class ParserServiceImplTest {
         expectedDto.setHelpfulnessNumerator(1);
         expectedDto.setHelpfulnessDenominator(1);
         expectedDto.setScore(5);
-        expectedDto.setTime(1303862400L);
+        expectedDto.setTime(LocalDateTime.ofInstant(Instant.ofEpochSecond(
+                1303862400L), ZoneId.systemDefault()));
         expectedDto.setSummary("Good Quality Dog Food");
         expectedDto.setText("I have bought several of the Vitality canned dog food products"
                 + " and have found them all to be of good quality.");

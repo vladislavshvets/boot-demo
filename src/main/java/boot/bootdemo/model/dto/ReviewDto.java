@@ -1,4 +1,4 @@
-package boot.bootdemo.dto;
+package boot.bootdemo.model.dto;
 
 import java.time.LocalDateTime;
 import lombok.Data;

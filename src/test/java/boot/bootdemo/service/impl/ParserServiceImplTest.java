@@ -2,7 +2,7 @@ package boot.bootdemo.service.impl;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import boot.bootdemo.dto.ReviewDto;
+import boot.bootdemo.model.dto.ReviewDto;
 import boot.bootdemo.service.CsvReaderService;
 import boot.bootdemo.service.ParserService;
 import java.time.Instant;

@@ -7,10 +7,10 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ReviewServiceImp implements ReviewService {
+public class ReviewServiceImpl implements ReviewService {
     private final ReviewRepository reviewRepository;
 
-    public ReviewServiceImp(ReviewRepository reviewRepository) {
+    public ReviewServiceImpl(ReviewRepository reviewRepository) {
         this.reviewRepository = reviewRepository;
     }
 

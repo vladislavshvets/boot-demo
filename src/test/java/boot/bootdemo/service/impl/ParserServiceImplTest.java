@@ -15,8 +15,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class ParserServiceImplTest {
-    private static final String FILE_NAME = "src/main/resources/line.csv";
-    private static final String WRONG_FORMAT = "src/main/resources/wrong_format.csv";
+    private static final String FILE_NAME = "src/test/resources/line.csv";
+    private static final String WRONG_FORMAT = "src/test/resources/wrong_format.csv";
 
     @Autowired
     private CsvReaderService readerService;

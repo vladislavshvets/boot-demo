@@ -6,10 +6,10 @@ import boot.bootdemo.service.RoleService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RoleServiceImp implements RoleService {
+public class RoleServiceImpl implements RoleService {
     private final RoleRepository roleRepository;
 
-    public RoleServiceImp(RoleRepository roleRepository) {
+    public RoleServiceImpl(RoleRepository roleRepository) {
         this.roleRepository = roleRepository;
     }
 

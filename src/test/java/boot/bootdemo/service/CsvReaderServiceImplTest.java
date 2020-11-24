@@ -10,9 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class CsvReaderServiceImplTest {
-    private static final String FILE_NAME = "src/main/resources/test.csv";
-    private static final String EMPTY_FILE_NAME = "src/main/resources/empty.csv";
-    private static final String WRONG_FILE_NAME = "src/main/resources/wrong.csv";
+    private static final String FILE_NAME = "src/test/resources/test.csv";
+    private static final String EMPTY_FILE_NAME = "src/test/resources/empty.csv";
+    private static final String WRONG_FILE_NAME = "src/test/resources/wrong.csv";
 
     @Autowired
     private CsvReaderService readerService;

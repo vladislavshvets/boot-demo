@@ -1,6 +1,6 @@
 package boot.bootdemo.service.impl;
 
-import boot.bootdemo.dto.ReviewDto;
+import boot.bootdemo.model.dto.ReviewDto;
 import boot.bootdemo.service.ParserService;
 import com.opencsv.CSVParser;
 import java.io.IOException;

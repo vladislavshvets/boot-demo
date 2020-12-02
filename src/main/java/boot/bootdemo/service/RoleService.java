@@ -1,9 +1,12 @@
 package boot.bootdemo.service;
 
 import boot.bootdemo.model.Role;
+import boot.bootdemo.model.RoleName;
+
+import java.util.List;
 
 public interface RoleService {
-    void save(Role role);
+    List<Role> saveAll(List<Role> roles);
 
-    Role findByName(String roleName);
+    Role findByName(RoleName roleName);
 }

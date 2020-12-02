@@ -1,6 +1,7 @@
 package boot.bootdemo.model;
 
 import java.time.LocalDateTime;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,8 +22,8 @@ public class Review {
     private LocalDateTime time;
     private String summary;
     private String text;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Product product;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private User user;
 }
